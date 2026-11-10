@@ -1,0 +1,8 @@
+# Tooling for generating, building and deploying the site (kept out of the repo)
+tools/
+
+.env
+*.log
+.DS_Store
+build/
+__pycache__/

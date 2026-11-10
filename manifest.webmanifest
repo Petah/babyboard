@@ -1,0 +1,16 @@
+{
+  "name": "BabyBoard",
+  "short_name": "BabyBoard",
+  "description": "Press any key to see a picture and hear a sound. A keyboard toy for little ones.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#fff3c4",
+  "theme_color": "#ffd43b",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

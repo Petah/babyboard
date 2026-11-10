@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- build:base -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>BabyBoard - a keyboard toy for babies and toddlers</title>
+  <meta name="description" content="A free keyboard toy for babies and toddlers. Every key shows a big friendly picture and says the letter and word out loud: A is for Apple, B is for Ball, T is for Truck.">
+  <!-- build:seo -->
+  <meta name="theme-color" content="#ffd43b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="BabyBoard">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/fredoka.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="start">
+    <div class="bubbles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <main class="title">
+      <!-- build:title -->
+      <h1 class="logo" aria-label="BabyBoard">
+        <span>B</span><span>a</span><span>b</span><span>y</span><span>B</span><span>o</span><span>a</span><span>r</span><span>d</span>
+      </h1>
+      <img class="hero" src="images/title.png" width="1536" height="1024" alt="A rainbow toy keyboard with a smiling truck, cat, star, apple, ball and butterfly popping out of it" draggable="false">
+      <!-- /build:title -->
+      <p class="play"><span class="for-keys">Press any key to play!</span><span class="for-touch">Tap to play!</span></p>
+    </main>
+    <footer class="about">
+      <p>A keyboard toy for little ones: every key shows a big picture and says the letter and word out loud.</p>
+      <!-- build:letters -->
+      <p class="hint">Grown-ups: hold <kbd>Esc</kbd> for a few seconds to exit full screen.</p>
+    </footer>
+  </div>
+
+  <div id="stage" aria-live="polite">
+    <div id="picture"></div>
+    <div id="word"></div>
+  </div>
+
+  <script src="items.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
